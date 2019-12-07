@@ -16,7 +16,7 @@ def scrape(origin, destination, startdate, days, requests):
     enddate = datetime.strptime(startdate, '%Y-%m-%d').date() + timedelta(days)
     enddate = enddate.strftime('%Y-%m-%d')
 
-    url = "https://www.kayak.com/flights/" + origin + "-" + destination + "/" + startdate + "/" + enddate + "?sort=bestflight_a&fs=stops=0"
+    url = "https://www.kayak.com/flights/" + origin + "-" + destination + "/" + startdate + "/" + enddate + "?sort=bestflight_a&fs=cfc=1;stops=0"
     print("\n" + url)
 
     chrome_options = webdriver.ChromeOptions()
