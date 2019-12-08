@@ -3,3 +3,5 @@ webdriver-manager
 beautifulsoup4
 pandas
 numpy
+seaborn
+matplotlib
